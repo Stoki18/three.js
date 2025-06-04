@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Table Configurator</title>
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Container for UI controls -->
+    <div id="ui-controls">
+        <!-- Table Top Selection -->
+        <div>
+            <label for="top-select">Table Top:</label>
+            <select id="top-select">
+                <option value="wood">Wood</option>
+                <option value="glass">Glass</option>
+                <option value="metal">Metal</option>
+            </select>
+        </div>
+
+        <!-- Table Legs Selection -->
+        <div>
+            <label for="legs-select">Table Legs:</label>
+            <select id="legs-select">
+                <option value="classic">Classic</option>
+                <option value="modern">Modern</option>
+                <option value="industrial">Industrial</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Canvas for 3D rendering -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Link to the main JavaScript file -->
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
